@@ -147,4 +147,4 @@ Method      | Arguments                           | Description
 
 ## Documentation
 
-To learn more please view the [API Docs](docs/ng-athorize.md).
+To learn more please view the [API Docs](docs/ng-authorize.md).
