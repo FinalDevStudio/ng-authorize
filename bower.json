@@ -1,0 +1,38 @@
+{
+  "title": "Angular Authorize",
+  "name": "ng-authorize",
+  "version": "1.0.0",
+  "homepage": "https://github.com/FinalDevStudio/ng-authorize",
+  "description": "Route authorization module for AngularJS",
+  "authors": [
+    "Santiago G. Marín <santiago@finaldevstudio.com>"
+  ],
+  "main": [
+    "dist/ng-authorize.js"
+  ],
+  "keywords": [
+    "angular",
+    "authorizer",
+    "authorize",
+    "auth",
+    "route",
+    "service"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".eslintrc.json",
+    ".editorconfig",
+    "karma.conf.js",
+    ".eslintignore",
+    ".jsbeautifyrc",
+    "node_modules",
+    "package.json",
+    "gulpfile.js",
+    ".travis.yml",
+    ".gitignore",
+    "*.log",
+    "docs",
+    "test",
+    "src"
+  ]
+}

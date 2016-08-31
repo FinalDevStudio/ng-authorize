@@ -1,0 +1,44 @@
+{
+  "title": "Angular Authorize",
+  "name": "ng-authorize",
+  "version": "1.0.0",
+  "description": "Route authorization module for AngularJS",
+  "main": "dist/ng-authorize.min.js",
+  "homepage": "https://github.com/FinalDevStudio/ng-authorize#readme",
+  "author": "Santiago G. Marín <santiago@finaldevstudio.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinalDevStudio/ng-authorize.git"
+  },
+  "keywords": [
+    "angular",
+    "authorizer",
+    "authorize",
+    "auth",
+    "route",
+    "service"
+  ],
+  "bugs": {
+    "url": "https://github.com/FinalDevStudio/ng-authorize/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^2.0.0",
+    "jsdox": "^0.4.10",
+    "karma": "^1.2.0",
+    "karma-chai": "^0.1.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "mocha": "^3.0.2"
+  }
+}
