@@ -2,7 +2,7 @@
  * ngAuthorize
  *
  * @description Route authorization module for AngularJS.
- * @module ngSession
+ * @module ngAuthorize
  * @author Final Development Studio
  * @license MIT
  */

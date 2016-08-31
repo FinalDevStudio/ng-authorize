@@ -1,4 +1,4 @@
-# ngSession
+# ngAuthorize
 
 Route authorization module for AngularJS.
 
@@ -15,7 +15,7 @@ ngAuthorize Service
 
 * * *
 
-### ngAuthorize.isAllowed(route, allowed)
+### ngAuthorize.isAllowed(route, allowed) 
 
 Checks if the current route can be accessed.
 
@@ -34,7 +34,7 @@ ngAuthorize.isAllowed($route.current.$$route, ['ROLE.USER']); // => true/false
 ```
 
 
-### ngAuthorize.canSignIn(route, allowed)
+### ngAuthorize.canSignIn(route, allowed) 
 
 Checks if there's no session allowed values and user can sign in.
 
@@ -52,7 +52,7 @@ ngAuthorize.canSignIn($route.current.$$route, ['ROLE.USER']); // => true/false
 ```
 
 
-### ngAuthorize.authorize(route, allowed)
+### ngAuthorize.authorize(route, allowed) 
 
 Main authorize function.
 
@@ -83,7 +83,7 @@ ngAuthorize Provider
 
 * * *
 
-### ngAuthorizeProvider.configure(cfg)
+### ngAuthorizeProvider.configure(cfg) 
 
 Configuration method.
 
@@ -104,3 +104,13 @@ ngAuthorizeProvider.configure({
 
 
 * * *
+
+
+
+
+
+
+
+
+
+
