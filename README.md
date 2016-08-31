@@ -7,12 +7,12 @@ Route authorization module for AngularJS.
 Using bower, install with this command:
 
 ```sh
-bower install --save ng-session
+bower install --save ng-authorize
 ```
 
-Then add either the `dist/ng-session.js` for development or the `dist/ng-session.min.js` for production to your application scripts.
+Then add either the `dist/ng-authorize.js` for development or the `dist/ng-authorize.min.js` for production to your application scripts.
 
-And finally, add the `ngSession` module to your AngularJS application dependencies.
+And finally, add the `ngAuthorize` module to your AngularJS application dependencies.
 
 ## Usage
 
@@ -80,7 +80,7 @@ angular.module('MyApp').config([
 
 #### Advanced example
 
-This example uses the [ngSession](https://github.com/FinalDevStudio/ng-session) and [ngFlashes](https://github.com/FinalDevStudio/ng-flashes) modules for improved functionality:
+This example uses the [ngAuthorize](https://github.com/FinalDevStudio/ng-authorize) and [ngFlashes](https://github.com/FinalDevStudio/ng-flashes) modules for improved functionality:
 
 ```javascript
 angular.module('MyApp').config([
@@ -126,7 +126,7 @@ angular.module('MyApp').config([
       forbiddenPath: '/panel/forbidden',
       signInPath: '/panel/users/sign-in',
       authorizer: [
-        '$q', '$route', 'ngAuthorize', 'ngSession', 'ngFlashes',
+        '$q', '$route', 'ngAuthorize', 'ngAuthorize', 'ngFlashes',
 
         ngAuthorizeAuthorizerFn
       ]
