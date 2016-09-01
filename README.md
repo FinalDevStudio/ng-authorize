@@ -22,6 +22,26 @@ This module defines a `session` object into the root scope, so you can access th
 
 To configure this module use it's provider during the `config` stage of your application.
 
+### Routes
+
+Your routes definition can now have an `auth` object with an `allows` property that can be either an array of or a single `String`.
+
+```js
+angular.module('MyApp').config([
+  '$routeProvider', 'ngAuthorizeProvider',
+
+  function ($routeProvider, ngAuthorizeProvider) {
+    $routeProvider.when('/restricted', {
+      templateUrl: '/assets/templates/restricted.html',
+      controller: 'RestrictedController',
+      auth: {
+        allows: ['ROLE.ADMIN']
+      }
+    });
+  }
+]);
+```
+
 ### Provider
 
 Use the provider to assign the values:
@@ -50,9 +70,17 @@ This is the bare minimum required configuration:
 
 ```javascript
 angular.module('MyApp').config([
-  'ngAuthorizeProvider',
+  '$routeProvider', 'ngAuthorizeProvider',
 
-  function (ngAuthorizeProvider) {
+  function ($routeProvider, ngAuthorizeProvider) {
+    $routeProvider.when('/restricted', {
+      templateUrl: '/assets/templates/restricted.html',
+      controller: 'RestrictedController',
+      auth: {
+        allows: ['ROLE.ADMIN']
+      }
+    });
+
     ngAuthorizeProvider.configure({
       forbiddenPath: '/forbidden',
       signInPath: '/users/sign-in',
@@ -84,9 +112,17 @@ This example uses the [ngAuthorize](https://github.com/FinalDevStudio/ng-authori
 
 ```javascript
 angular.module('MyApp').config([
-  'ngAuthorizeProvider',
+  '$routeProvider', 'ngAuthorizeProvider',
 
-  function (ngAuthorizeProvider) {
+  function ($routeProvider, ngAuthorizeProvider) {
+    $routeProvider.when('/restricted', {
+      templateUrl: '/assets/templates/restricted.html',
+      controller: 'RestrictedController',
+      auth: {
+        allows: ['ROLE.ADMIN']
+      }
+    });
+
     /** Authorizer function */
     function ngAuthorizeAuthorizerFn($q, $route, $auth, $session, $location, $flash) {
       var deferred = $q.defer();
