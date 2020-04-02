@@ -1,3 +1,7 @@
+---
+### No longer maintained.
+---
+
 # ng-authorize
 
 Route authorization module for AngularJS.
